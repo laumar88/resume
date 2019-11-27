@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');      /* *££ ref from below, These just give us a nice definition to the text beyond the standard sizes and also italicize or bold.  */  
+   /* we used two fonts the Roboto and Exo fonts and easy to add extras by adding the '|' its called a pipe separator */
+   /*  */
+
+
+/*--------------------------------------------Colors*/
+
+.bg-color-name-title {            /* '.' indicates that its a class name, edits the background colour for the name and title h1 and h2 **% */
+    background-color: #676767;
+}
+
+.bg-color-three-reasons {        /* This is the background color for our 'About me' section */
+    background-color: #fff;      /* *&%** ref.Set the background color to white */
+}
+
+.ui-menu-color-home {             /* *£%* ref to target the background for menu home tab in html */
+    background-color: #e67e22;    /* The colour for the background of the home tab */
+}
+
+.ui-menu-color-resume {
+    background-color: #9b59b6;
+}
+
+.ui-menu-color-contact {
+    background-color: #3498db;
+}
+
+.ui-menu-color-download {
+    background-color: #525252;
+}
+
+
+
+
+
+/* ----------------------------------------Special paddings/margins/text */    /* This targets the three columns of about, download cv and social but they are generic so will be used for other bits later on */
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;            /* This is what gives our three subheadings the uppercase letters */
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;        /* We choose Exo but the default incas website does not recognise is sans-serif */
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.row-table {                /* **$%$ Ref. from .html to target the about me table section layout  */
+    display: table;         /* use 'table' cell as we want a table layout */
+}
+
+.section-column {            /* *££%* ref. from .html to target the about me table section layout */
+    display: table-cell;     
+    padding: 0 30px 30px;    
+    float: none;             /* Set it to none so the coloumn does not end up with any unsightly breaks */
+}
+
+.section-heading {                        /* *&£&* ref to targe the About me heading */
+    font-family: "Exo", sans-serif;        /* font family that we're using is going to be Exo, again with the san-serif as our fallback. */
+    font-weight: 300;            
+    margin-top: 25px;            /* just to give a little bit of space around the areas above and below the header, we'll add a top margin of 25px */
+    margin-bottom: 40px;         /* and a bottom margin of 40px. */
+}
+
+
+/*  */
+/*  */
+
+/*--------------------------------------------Heading*/
+       
+header {
+    margin: 0;
+}
+
+
+.heading {                        
+    margin-left: 50px;               /* This pushes the h1 and h2 out from the left to the middle abit more */
+}
+
+
+.logo {
+    background: url("../images/rosie.jpg");        /* This links the location of the image and links it over to here */
+    background-position: center;                   /* Places the image in the center of the page */
+    background-repeat: no-repeat;                  /* So the image does not repeat and repeat like a wallpaper */
+    background-size: cover;                        /* Covers the container that it sits in */
+    min-height: 360px;
+    transition: all .5s ease-in-out;                /* so it transitions in when the page loades */
+    -moz-transition: all .5s ease-in-out;           /* so the transition works in all browsers */
+    -webkit-transition: all .5s ease-in-out;        /* so the transition works in all browsers */
+}
+
+/*  */
+
+.name {                                         /* This attacks the html heading h1 *** */
+    font-family: "Exo", sans-serif;             /* Exo is the first font of choice and san-serif is the backup if exo fails */
+    font-weight: 100;                           /* The font weight is 100, and, as you can see, that matches the option that we specified in our font import up at the top of our CSS file. *££ ref */
+    font-size: 46px;                            /*  */
+    margin-top: 50px;                           /* margin of 50px. That will just push it down a little bit from the top of the page */
+    color: #fff;                                /* set the text color to white, which is #ffffff, or #fff if you want to do the shorthand method. */
+}
+
+.title {                                        /* This attacks the html heading h2 **$ */
+    font-family: "Roboto", sans-serif;          /* So we'll give the font family of Roboto and Sans Serif as a fallback in case Roboto fails to load. */
+    font-weight: 200;                           /* give this a font-weight of 200, which will make it a little bit wider, or a little bit heavier, than the previous font-weight we used. We can do this because we've referenced that particular font-weight in our import. *££*/
+    font-size: 28px;                            /*  */
+    margin-top: 20px;                           /* And we're going to use a margin-top here, just to push this title down a bit from the <h1> above. */
+    margin-bottom: 90px;                        /* I will also give a margin-bottom of 90px, which is just going to give us a bit of breathing space. It's going to stand out above the navigation elements that will follow. */
+    color: #fff;
+}
+
+.list-inline-item:not(:last-child) {            /* This default if left alone would of added a big gap between the four menu tabs by copy and pasting from 'inspect' we can override it, default margin: was 'margin-right: .5rem' */
+    margin: 0;                                  /* we changed the default value if left from margin-right: .5rem to margin: 0 */
+}
+
+.menucontainer {                                /* *%%% ref. give it a font-size: 0 to close up the gaps between our four items tabs, delete this to see what happens,  */
+    font-size: 0;                               /* However by creating this it makes all our items have a font-size of 0 so we can no longer see them so we use the below #nav li **$$ ref */
+}
+
+#nav li {                                        /* **$$ ref. the above '.menucontainer' make all font sizes 0 so we can no longer see them so we create this to override it */
+    font-size: 14px;
+    padding: 0;                                  /* Set padding to 0 as we want full over all control */
+}
+
+#nav {                                           /* The image of the bicep woman does not line up with the bottom of our navigation buttons so this brings the image up abit inline so target the nav above*/ 
+    margin: 0;
+}
+
+
+
+/*  */
+
+.menuitem {                     /* *£*£ ref. all the four menu items are controlled here, this element controls the box size of the background */
+    height: 120px;              /* going to set the height to 120px, which will be roughly a third of the overall height of this section. Remember that our profile image is 360px in height. So 120 is a third of that overall height, which provides a kind of visual balance.*/   
+    text-align: center;         /*  */
+    padding: 0;                 /*  */
+}
+
+.menuitem a {                   /* So now let's go back and target some child elements.The anchor, or the <a> tag, is our clickable area.So what we want to do is target that.It's a child of menuitem. */
+    width: 100%;                /* The goal is to make the entire area of this <div> clickable. so set it to 100% */
+    text-decoration: none;      /* We'll then set the text decoration to none. This will remove the underscore that we see under the text of our link. It's very rare that you'll see an underlined link item these days. */
+    color: #fff;                /* Set the colour of the writting to white */
+    height: 120px;              /* set the color to white and the height to 120px, which matches our parent menuitem. */
+}
+
+.menuitem a i {                /* Want to target the font awesome icons now so we use menuitem as the parent then the <a> tag and then i, which is a child of our anchor tag. */
+    padding-top: 22px;         /* we want to do is set some top padding at 22px, which will just push it down a little bit from the top of the <div>. */
+    display: block;            /* display block so that the icon appears on a line of its own. It will start and end with a new line. Normally, the i element is inline.l see an underlined link item these days. */
+    color: #fafafa;            /* Off white colour for font */
+    font-size: 26px;           /* font size */
+}
+
+.menuitem span {                /* This targets the writing beneath the font icon */
+    display: block;             /* We're going to set display block again so that it appears on a line by itself. */
+    width: 100%;                /* set the width to 100%, so it goes the full width of our parent <div>. */
+    padding-top: 5px;           /* set the padding-top just to 5px, which will push it down a little bit below our Font Awesome icon above it. */
+    text-align: center;         /* center align */
+    text-transform: uppercase;  /* text transform uppercase, which will make it capital letters. */
+    font-size: 14px;            /* We're going to increase the size to 14px from standard. */
+    font-weight: 300;           /* set the font-weight to 300, which is slightly thinner than the standard font-weight, but it looks more elegant. */
+    letter-spacing: 2px;        /* also experiment with adding some letter spacing between the letters of 2px each. */
+}
+
+
+
+/*--------------------------------------------Hover.css*/
+
+.hvr-sweep-to-bottom:before {          /* **%$ ref This modifies the element from the html page for each button so the hover effect works, be default the sweep effect is blue and thick and not transparent, we use 'before' to target this hover sweep to bottom class, then take a look at this image, which is of Google Chrome developer tools with the hover state toggled. As you can see, it's in the before pseudo element where the background color is set for our hover sweep to bottom class.  */
+    background: rgba(0, 0, 0, 0.2);    /* Change the background color. use rgba. We'll set the default to black for the rbg values. We'll set the transparency to 0.2, which will give a nice gray transparency. */
+    height: 120px;                     /*  set the height to 120px so that it fills our entire menu item.*/
+}
+
+
+/* ----------------------------------------Footer */
+
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+.cv-pdf i {                                        /* *%*% ref We're actually going to target the Font Awesome icon, the i element, inside cv-pdf. */
+    font-size: 18px;                               /* going to set the font-size here to 18px. */
+    color: #fafafa;                                /* off-white that we've been using throughout the project. */
+    text-align: center;                            /*  */
+    padding-left: 5px;                             /* give 5px padding to the left, just to push it out a little bit from the other text. */
+    transition: all 0.35s ease-in-out;             /* we also want to do is when we hover over this is have our icon change to a dark, rich orange color.To do that, we need to use transitions. going to put the transitions here, rather than in the hover pseudo-element (the next step below) The reason for this is that you always want to put the transitions in the parent element, rather than the hovered. This means that the transition will take effect when the mouse hovers over and when the mouse leaves. I'm going to add in my vendor prefixes here as well on my transition. */
+    -moz-transition: all 0.35s ease-in-out;        /* So the transition from above works in all sorts of websites the same for the ones below*/
+    -webkit-transition: all 0.35s ease-in-out;     /*  */
+    -o-transition: all 0.35s ease-in-out;          /*  */
+}
+
+.cv-pdf i:hover {                  /* This hover is for the download icon and social links section when we hover over the fb and twitter icons etc to turn an orange colour */                
+    color: #e84610;                /* When it's hovered over, what we want is for the color to change to a deep orange. */
+}
+
+.social-links {                    
+    padding-bottom: 15px;
+}
+
+.social-links li a i {            /* This is the social media links like fb twitter icons when we hover over it, focus on our Font Awesome icons, so that's social-links li a i. */
+    width: 32px;                 /* Match the width and height to the same to make a square */
+    height: 32px;                 /* Match the width and height to the same to make a square */
+    padding: 12px 0;             /*  */
+    border-radius: 50%;         /* The reason for this is that if you set the border-radius to 50% when something has equal height and width, then you get a circle. */
+    font-size: 13px;             /*  */
+    line-height: 7px;             /*  */
+    text-align: center;         /*  */
+    color: #fafafa;             /* off white colour */
+    background: #8f8f8f;                     /* light grey colour */
+    transition: all 0.35s ease-in-out;         /* This and below other ones are copied and pasted from above (.cv-pdf i) */
+    -moz-transition: all 0.35s ease-in-out;     /*  */
+    -webkit-transition: all 0.35s ease-in-out;     /*  */
+    -o-transition: all 0.35s ease-in-out;         /*  */
+}
+
+.social-links li a i:hover {            /* social links copied from above but we add 'hover' so when we hover the background changes colour */
+    background: #e84610;                /* Set the background to a deep orange colour so when we hover over it it changes slowly and nicely */
+}
+
+#footer-details {        /* *&£&£ ref. We targeted this in .html as id="footer-details" so can target it here */
+    padding: 20px;        /* I'm just going to add some padding top, bottom, left, and right of 20px. */
+}
+
+
+
+/*  */
