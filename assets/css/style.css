@@ -13,6 +13,10 @@
     background-color: #fff;      /* *&%** ref.Set the background color to white */
 }
 
+.bg-color-personal-info {        /* This is the background color for our 'Personal info' section. *111* ref. html Set the background color to light grey */
+    background-color: #f4f4f4;    
+}
+
 .ui-menu-color-home {             /* *£%* ref to target the background for menu home tab in html */
     background-color: #e67e22;    /* The colour for the background of the home tab */
 }
@@ -231,6 +235,58 @@ footer {
 
 #footer-details {        /* *&£&£ ref. We targeted this in .html as id="footer-details" so can target it here */
     padding: 20px;        /* I'm just going to add some padding top, bottom, left, and right of 20px. */
+}
+
+
+/* ----------------------------------------Three Reasons */        
+
+.three-reasons-icon {                /* *^*** ref. This attacks the about me three font awesome icons  */
+    font-size: 26px;                /* want to make it bigger than default size so make it 26px */
+    color: #e67e22;                /*  use the same color as we used for the home page menu item so copy and paste it in. */
+}
+
+.three-reasons-heading {            /* *^^** ref. styled from .html file for the three headings in about me using three-reasons-heading */
+    margin-bottom: 15px;            /* give a little bit of space between the heading and our content text, so we'll put the margin-bottom to 15px. */
+}
+
+
+
+
+/* ----------------------------------------Personal Info */
+
+.personal-info-item {                /* All of the info in the 'Personal Info' this section is to target the 'personal info' section in the left third of the website */
+    margin-bottom: 20px;             /* We want each personal info item to stand alone. In other words, we want it to take up the maximum horizontal space available and push its siblings down below it. So to do that, we're going to set the margin bottom to 20px, just to create a bit of vertical space between each item. */
+    display: block;                  /* We're also going to set the display to block, so it will start and end with a newline and occupy the entirety of the horizontal space. */
+    clear: both;                     /* Then we're going to set the clear to both so that no other items can appear at either side of it in case, we were using floats. */
+}
+
+.personal-info-item .key,            /* *1111 ref. html targetting in html. So let's copy the main class name here, paste it in, and drill down into our key. */
+.personal-info-item .value {         /* *1111 ref. html targetting in html. And I'll drill into our value as well because we're going to use some overlapping or duplicate styles for keys and values. */
+    padding-right: 8px;              /* So I'm going to set the padding rate to 8px, just to make it more presentable. */
+    display: inline-block;           /* Then I'm also going to set the display for both of these to inline-block. */
+}
+
+                                     /* Remember that a <div> is a block level element by default, which means it starts and ends with a new line and occupies the maximum horizontal space available. An inline block on the other hand allows us to put two divs side-by-side, and that's what we want to do here. */
+
+.personal-info-item .key p,          /* *1*1* ref. html target in html. So now that that's set, we can look at styling the paragraphs. Again, we'll do some common styling for both the key and the value. */
+.personal-info-item .value p {       /* *1*1* ref. html target in html.  */
+    margin: 0;                       /* That will be just to set the margin to 0 so that we can deal with the margins outside of our personal info item paragraph. */
+}
+
+.personal-info-item .key {           /* *212* .ref below */
+    width: 30%;                      /* The first thing I want to do is give the width of the 'key' as 30% because we're going to set the width of the 'value' to 60%, which gives us an overall of 90%. */
+    margin-right: 21px;              /* put some margins and padding on either side of the combined percentages of both key and value, which will give us some breathing space and make everything look nice. */
+    padding-top: 2px;                /* padding here like above */
+    vertical-align: top;             /* I'm also going to set the vertical-align to top so that it hugs the top of the <div> as much as possible. */
+}
+
+.personal-info-item .key p {         /* there's something specific to the paragraph of the key that I want, and that is that we want it to be bold, as we mentioned */
+    font-weight: 700;                /* set the font weight to 700, which is heavier than the default font-weight. */
+}
+
+.personal-info-item .value {         /* The final thing that I need to do now that's added is to style our 'value' */
+    position: relative;              /* Setting the position to relative, too, because I want it to be relative to its predecessor. *212* .ref above */
+    width: 60%;                      /* The key occupies 30% of the width. Our value, as I said a moment ago, is going to occupy 60%. As we said, this will combine to 90% and still allow for some breathing space on either side of our key value pairing.*/
 }
 
 

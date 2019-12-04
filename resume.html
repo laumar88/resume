@@ -48,8 +48,62 @@
             </div>
         </div>      
     </header>
-    <section>
-<!--  -->
+        <section class="container-fluid">           <!-- Creating some personal details section for the 'cv' hire me bit The shape of that will be two columns, similar to the header.
+            On the left side, we'll have a column that's one-third the width of the entire row, which will contain Rosie's personal contact information.
+            And on the right-hand side, taking up two-thirds, we'll have some expanded content explaining what Rosie's good at, why you should hire her, and so on. -->
+        <div class="row">             <!-- add in 'row-table' to allow us to create a table structure so that our columns will remain the same height, 'row-table' removed becuase causes some issues with positioning, regardless of content. **$%$ Ref. in.Css to target the 'About me' section -->
+            <div class="col-md-4 bg-color-personal-info section-column">        <!-- This section down to **1** ref. below is all about adding our personal info items to the final third, which will be on the third left so it's the same dimensions as the profile photo above it, and it pushes out evenly. -->
+                        <!-- add a col-md-4 above our three reasons. doing this because, by default, elements are rendered in the order that they appear in HTML. So they either appear above, or they'll appear to the left and try and push any block level elements below that.
+                        But we're using bootstrap to have our two columns side-by-side in the row. we do want our personal information to appear on the left, so that's why we're putting our col-md-4 above the three reasons. -->
+                        <!-- I'm also supplying another class, bg-color-personal-info, which we'll set a nice grey background color. I'm also going to give section-column as a class there as well. -->
+                        <!-- col-md-4 uses 4/12 of the 12 spaces leaving the other 8/12 spaces for below *11** ref. -->
+                        <!-- bg-color-personal-info in *111* ref. in .css Set the background color to light grey -->
+                <div class="row">                               <!--  -->
+                    <div class="col-12">                        
+                        <h3 class="section-heading uppercase">  <!-- each column is going to have its own header. so we add a bootstrap row a column with the width of 12 which is the full width of the screen and use h3 for this header -->
+                            Work History
+                        </h3>
+                    </div>
+                </div>
+            </div>                                              <!-- This section down to **1** ref. above for the left third of the Personal Info section -->
+            <div class="col-md-8 bg-color-three-reasons section-column">        <!-- 8/12 spaces for below *11** ref. from above left over 8/12 space. Inside our row, then, I'm going to create a column (because we have to have a column as a direct child of a row) of size 8, which is two-thirds the width of the screen. we set col-md-8 as we don't need to add any size classes for screen sizes smaller than medium because Bootstrap will automatically default to 12, our full width. We give a class called section-column, which will specify that this column is a table cell and also section-column specifies the use of a table cell, which will give us evenly sized columns in terms of height.
+                        we set the above bg-color-three-reasons *&%** ref. in .Css so that we can target it for the background of the 'About me' section -->
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section-heading uppercase">My Skills</h3>      <!-- give that the class of section heading, which we'll style shortly, and uppercase because we want all of our headers to be in uppercase format. -->
+                    </div>
+                </div>
+                <div class="row">   <!-- *)*(* ref. FROM HERE TO BELOW THREE ROWS FOR THE ABOUT ME -->
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">         <!-- When looked at on the mobile, this is going to be 10 columns wide with an offset of 1 so that we get the content centered and have a one column margin down the left side
+                            We're going to switch that offset off for tablets and larger because on the tablet, we want it to appear in three columns of content. On a desktop, we want it to appear in two columns. As we said, though, we have three content sections. But there's only room for two on the desktop, so one of them will fluidly move to the bottom below the other two. -->
+                        <div class="row">                                               <!-- Will make three of these -->
+                            <div class="col-2">                                         <!--  -->
+                                <i class="three-reasons-icon fa fa-tv" aria-hidden="true"></i>        <!-- *^*** ref. styled in .css using three-reasons-icon. But we're going to give it the class of three-reasons-icons so that we can style it. And then we'll do fa fa-question to give us a question mark. Again, we'll switch aria-hidden to true so that we don't confuse any screen readers. -->
+                            </div>
+                            <div class="col-10">            <!-- In our <div>, our Bootstrap specification for our icon was too wide, which leaves us with 10 columns for our header and the text. -->
+                                <h4 class="three-reasons-heading uppercase">Front End</h4>       <!-- *^^** ref. styled in .css using three-reasons-heading. We'll also give it its own class name of three-reasons-heading. And as per the rest of the headings at this point, we'll also give them the uppercase class. The heading text is "What do I do?". -->
+                                <p>
+                                    I'm a skilled Full Stack Developer with a wealth of diverse life and technical experience that I bring to every project. <!-- this is just a couple of sentences. It should be pretty arresting and captivating for a potential employer or potential client. -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">         <!-- This is copied from above just change h4 class title and the paragraph -->
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-gears" aria-hidden="true"></i>     <!-- Change the question mark to a font awesome thunbs up -->
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Back End</h4>
+                                <p>
+                                    I follow form as well as function. I know that the aesthetics of effective design combined with application speed, security and reliability combine to create a great user experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>    <!-- *)*(* ref. FROM ABOVE TO HERE THREE ROWS FOR THE ABOUT ME -->
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="container-fluid">                            <!-- We want it to be a full width flexible container -->
          <div id="footer-details" class="row">                    <!-- *&£&£ ref. We added the id="foot-details" so we can target the spacing between the About, Spacing and Social headings distance are hugging the top of our footer a little bit so added this so we can target in .Css  -->  
