@@ -83,7 +83,7 @@
                             <div class="col-10">            <!-- In our <div>, our Bootstrap specification for our icon was too wide, which leaves us with 10 columns for our header and the text. -->
                                 <h4 class="three-reasons-heading uppercase">Front End</h4>       <!-- *^^** ref. styled in .css using three-reasons-heading. We'll also give it its own class name of three-reasons-heading. And as per the rest of the headings at this point, we'll also give them the uppercase class. The heading text is "What do I do?". -->
                                 <p>
-                                    I'm a skilled Full Stack Developer with a wealth of diverse life and technical experience that I bring to every project. <!-- this is just a couple of sentences. It should be pretty arresting and captivating for a potential employer or potential client. -->
+                                    I'm skilled in User Experience Design using the trinity of HTML/CSS/Javascript. I also have extensive experience in Front End Frameworks such as Angular and React <!-- this is just a couple of sentences. It should be pretty arresting and captivating for a potential employer or potential client. -->
                                 </p>
                             </div>
                         </div>
@@ -96,11 +96,47 @@
                             <div class="col-10">
                                 <h4 class="three-reasons-heading uppercase">Back End</h4>
                                 <p>
-                                    I follow form as well as function. I know that the aesthetics of effective design combined with application speed, security and reliability combine to create a great user experience.
+                                    I specialize in data-driven web applications. Many of my projects utilise document-based data. I use Python and Django in conjunction with MongoDB to process and present information.
                                 </p>
                             </div>
                         </div>
                     </div>    <!-- *)*(* ref. FROM ABOVE TO HERE THREE ROWS FOR THE ABOUT ME -->
+                </div>
+                <div class="row progress-section">      <!-- *2*** ref in .css The 'progress-section' is a reference to used in .css to target the space above and below and left and right, the progress bar section-->
+                    <div class="col">   <!-- in bootstrap a 'row is always followed by a 'column' -->
+                        <div class="progress">    <!-- To create a progress bar, then, we use a progress class. This is a default built-in class provided by Bootstrap that acts as a wrapper for a progress bar and its content.  -->
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%; ">   <!-- The actual bar itself is created using the progress-bar class. need to say role="progressbar". Then we want to set some aria attributes as well. The aria-valuenow attribute represents the current value of the progress bar. So we're setting this one to 90.  Then we need to create a range. So aria-valuemin is set to 0. aria-valuemax is set to 100, which gives it a 0 to 100 range.-->
+                                <span class="sr-only">90% complete</span>   <!-- Inside the <div>, then, I'm going to create another <span> and give that the class of sr-only, which we came across before. So this is for screen readers only. When a screen reader encounters this progress bar, which otherwise it would make no sense of, it will read 90% complete. -->
+                            </div>
+                            <span class="progress-type">HTML / HTML5</span>  <!-- Then, under that <div>, we're going to add in another <span> with the class of progress-type. This will be a textual description of what the progress bar is communicating to us.So in this case, it's HTML / HTML5.-->
+                                <!-- So in the above spans Rosie is saying that she's 90% proficient in HTML and HMTL5, 90% relative to the other skill sets we'll display -->
+                        </div>
+                        <div class="progress">    <!-- This Div was copied and pasted from above this will be the resume.html second progress bar witha default colour of green background built in by bootstrap -->
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%; ">   <!-- Added 'bg-success' to change the colour of the progress bar to a green colour through bootstrap. Once again copied and pasted from above to save time but changed the fields aria-valuenow="80" style="width:80%;-->
+                                <span class="sr-only">80% complete</span>   <!-- In this span we changed the wording from 90% to 80% complete to reflect our CSS progress -->
+                            </div>
+                            <span class="progress-type">CSS / CSS3</span>  <!-- Then, under that <div>, we're going to add in another <span> with the class of progress-type. This will be a textual description of what the progress bar is communicating to us.So in this case, it's HTML / HTML5.-->
+                                <!-- So in the above spans Rosie is saying that she's 90% proficient in HTML and HMTL5, 90% relative to the other skill sets we'll display -->
+                        </div>
+                        <div class="progress">    <!-- To create a progress bar, then, we use a progress class. This is a default built-in class provided by Bootstrap that acts as a wrapper for a progress bar and its content.  -->
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%; ">   <!-- Added 'bg-info' to change the colour to a torquise colour through bootstrap Once again copied and pasted from above to save time but changed the fields aria-valuenow="70" style="width:70%;-->
+                                <span class="sr-only">70% complete</span>   <!--  In this span we changed the wording from 80% to 70% complete to reflect our Javascript progress -->
+                            </div>
+                            <span class="progress-type">JavaScript / jQuery</span>  <!-- Then, under that <div>, we're going to add in another <span> with the class of progress-type. This will be a textual description of what the progress bar is communicating to us.So in this case, it's HTML / HTML5.-->
+                        </div>
+                        <div class="progress">    
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%; ">   <!-- Added 'bg-warning' to change the colour to a yellow colour through bootstrap Once again copied and pasted from above to save time but changed the fields aria-valuenow="80" style="width:80%;-->
+                                <span class="sr-only">80% complete</span>   <!--  In this span we changed the wording from 80% to 80% complete to reflect our Django -->
+                            </div>
+                            <span class="progress-type">Django and Python</span>  <!-- Then, under that <div>, we're going to add in another <span> with the class of progress-type. This will be a textual description of what the progress bar is communicating to us.So in this case, it's HTML / HTML5.-->
+                        </div>
+                        <div class="progress">    
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%; ">   <!-- Added 'bg-warning' to change the colour to a yellow colour through bootstrap Once again copied and pasted from above to save time but changed the fields aria-valuenow="80" style="width:80%;-->
+                                <span class="sr-only">80% complete</span>   <!--  In this span we changed the wording from 80% to 80% complete to reflect our Django -->
+                            </div>
+                            <span class="progress-type">SQL / NoSQL</span>  <!-- Then, under that <div>, we're going to add in another <span> with the class of progress-type. This will be a textual description of what the progress bar is communicating to us.So in this case, it's HTML / HTML5.-->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

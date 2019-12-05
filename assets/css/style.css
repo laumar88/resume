@@ -290,5 +290,28 @@ footer {
 }
 
 
+/*  */
+/* ----------------------------------------Skills */
+
+.progress {                          /* This changes the progress bar for HTML/HTML5 to make the blue line bigger */
+    position: relative;              /*  */
+    height: 25px;                    /* When you change the height of a progress wrapper, it automatically changes the height of the bar inside. */
+    margin-bottom: 4px;              /* We're also going to just give a little bottom margin of 4px, just to push down the bars relative to each other. */
+}
+
+.progress-type {                     /* This pushes the HTML/HTML5 label progress bar to the left and changes it to an off white colour easier on the eyes */
+    position: absolute;              /* We want it to sit on top of the progress bar instead of over to the right. This is the absolute child of a relative parent.*/
+    left: 0px;                       /* We also want it to be positioned to the far left. So when we set the left position to 0px, it will move it to the far left of the progress bar.*/
+    font-weight: 400;                /* We're just going to set the font-weight to 400 as well. */
+    padding: 3px 30px 2px 10px;      /* And add some padding: top of 3px, right of 30px, bottom of 2px, and left of 10px, just so that we have a bit of horizontal breathing space. */
+    color: #fafafa;                  /* Off white colour */
+    background-color: rgba(25, 25, 25, 0.2);        /* We're going to set a background color using rgba to provide some background opacity. So I'm going to set that to 25, 25, 25, and then 0.2 opacity. */
+}
+
+
+
+
+
+
 
 /*  */
