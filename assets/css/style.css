@@ -21,6 +21,10 @@
     background-color: #9b59b6;    /* This is copied and pasted from the .ui-menu-color-resume below same colour */
 }
 
+.bg-color-contact {               /* *^^^* ref in html background for the 'Contact' page will be styled here */
+    background-color: #fff;
+}
+
 .ui-menu-color-home {             /* *£%* ref to target the background for menu home tab in html */
     background-color: #e67e22;    /* The colour for the background of the home tab */
 }
@@ -375,5 +379,45 @@ footer {
     
     
     
+/* ----------------------------------------Contact Form */                /* This is to style the contact.html file page */
+/*  */
+
+.contact-heading {                        /* Taken from contact.html 'contact-heading' *!*** ref in contact.html This targets the H3 and H5 elements */
+    font-family: "Exo", sans-serif;       /* our font family, as usual, is going to be Exo with a fall back of San Serif. */
+    font-weight: 300;                     /* The font-weight will be 300, which is a little bit lighter than default. */
+    margin-top: 25px;                     /* We also want to give some breathing space between the heading h3 and h5 elements above it. We'll create what's called negative space. So we're going to set up a margin-top of 25px  */
+    margin-bottom: 20px;                  /* and a margin bottom of 20px, just to create some distance between the two headers h3 and h5 and the content that follows below. */
+}
+
+.center-form {                            /* *!!** ref in contact.html */
+    padding-top: 10px;                    /* set top padding of 10px, just to push it down a little bit from our subheading. */
+    margin: 0 auto;                       /* set margin 0 top and bottom and auto left and right, which is how we center content. */
+    max-width: 70%;                       /* give the form a max-width of 70% because it's not good user experience to take up the whole 100% of the screen, as we said, for the form to take up the entire width of the page. It's too big. */
+}
+
+button[type="submit"] {                   /* *!!!* ref in contact.html This style is to style and target our button for the 'send project request' in contact.html */
+    margin-top: 15px;                     /* set the margin top and bottom to give a bit of breathing space. this pushes down the button so its not sticking to the bottum of the 'project description' box above it by default */
+    margin-bottom: 20px;                  /* This increases the default space/void from the button of the button to the next section below makes it more eye appealing */
+    color: #fafafa;                       /* This changes the word 'send project request' colour to an off white colour */
+    background-color: #e84610;            /* This changes the default dark grey background to an orage colour (code institute red) */
+}
+
+
+
+
+/* ----------------------------------------Media Queries */                /* This is to target the enquiry form to make it smaller in bigger screens such as PCs, the 'center-form element above has a margin of 
+                                                                             70% for all screens but on PC it looks still too big so we target it here to amkae it smaller*/
+
+@media(min-width: 992px) {                /* We want the form to be a little bit narrower on the desktop for it just to be 70% on a mobile device. So what I'm going to do is create a media query. Our media query is only going to 
+                                            take effect when the width of the screen is 992px or greater. So I'm going to set @media(min-width) to 992px. So when our screen size is wider than 992px.*/
+    .center-form {                        /* So will only come into effect  when the screen gets larger than 992p, this is copied and pasted from the above center-form */
+        padding-top: 30px;                /* Increase the padding from the top from before of 10px to 30px */
+        min-height: 240px;                /* set a minimum height for this section so that it occupies some nice vertical space on the screen. */
+        margin: 0 auto;                   /* set the max-width to just 50%. If you refresh you'll see that our form gets a little bit narrower, and the section gets higher. */
+        max-width: 50%;                   /*  */
+}
+
+    
     
 /*  */
+
