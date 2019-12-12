@@ -17,6 +17,10 @@
     background-color: #f4f4f4;    
 }
 
+.bg-color-work-history {          /* *%%£* ref. in html. This changess the colour of the background of the work history resume to purple background to match the resume button */
+    background-color: #9b59b6;    /* This is copied and pasted from the .ui-menu-color-resume below same colour */
+}
+
 .ui-menu-color-home {             /* *£%* ref to target the background for menu home tab in html */
     background-color: #e67e22;    /* The colour for the background of the home tab */
 }
@@ -70,8 +74,9 @@ h4 {
     float: none;             /* Set it to none so the coloumn does not end up with any unsightly breaks */
 }
 
+.history-heading,                         /* *%*£*. ref from .html this will share some of the .section-heading styles below */
 .section-heading {                        /* *&£&* ref to targe the About me heading */
-    font-family: "Exo", sans-serif;        /* font family that we're using is going to be Exo, again with the san-serif as our fallback. */
+    font-family: "Exo", sans-serif;       /* font family that we're using is going to be Exo, again with the san-serif as our fallback. */
     font-weight: 300;            
     margin-top: 25px;            /* just to give a little bit of space around the areas above and below the header, we'll add a top margin of 25px */
     margin-bottom: 40px;         /* and a bottom margin of 40px. */
@@ -308,10 +313,59 @@ footer {
     background-color: rgba(25, 25, 25, 0.2);        /* We're going to set a background color using rgba to provide some background opacity. So I'm going to set that to 25, 25, 25, and then 0.2 opacity. */
 }
 
+.progress-section {                  /* *2*** ref in .html The 'progress-section' created just so we could target it here for the progress bar spacing above, below and left and right*/
+    margin: 40px 20px;               /* In the progress-section, we're going to set some margins, so 40px top or bottom, 20px left and right. */
+}
 
 
+/*  */
+/* ----------------------------------------Work Hisroty */
 
+.history-heading {                  /* *%*£*. ref html t change the colour of the Resume Work History title to a more readable colour */
+    color: #fafafa;                 /* This changes the Change the color of the Work History title to off white grey colour */
+    margin-bottom: 50px;            /* give it the bottom margin of 50px, just to push the content below a little bit further down so that there's some space between that and the heading. */
+}
 
+.timeline-item {                    /* targetted in *%£%* ref. html. This is PARENT timeline-item styled This makes the writing from black to off white and spreads them down more and evenly space them to look better and eye appealing better spacing*/
+    padding: 4em 2em 0em 2em;       /* going to do is set the padding at the top, the right, the bottom, and the left, so it will be 4em at the top, 2em on the right, 0em on the bottom, and 2em on the left. */
+    position: relative;             /* position of our timeline-item is going to be relative. This is because we're going to have some absolute children that we want to style inside this timeline-item <div>. */
+    color: #fafafa;                 /* our off white color of #fafafa */
+    border-left: 1px solid;         /* add a border-left. Now, the border-left is going to be the only border that will be displayed. This will give the effect of our vertical timeline. So it's solid, and it's 1px thick. */
+}   
+
+.timeline-item p {                  /* Now let's style our paragraph to make it more tidier as there are gaps in the left vertical line, this will bring them together, (which is for the role, Rosie's role and description at her place of work for that period). */
+    padding: 0;                     /* What we're just going to do is set the padding and the margins both to 0. */
+    margin: 0;                
+}
+
+.timeline-item:before {             /* This style lets us show the div we custom made (none Bootstrap default) so we can show the dates and times of our jobs in the Resume Work History by using the "BEFORE" pseudo element below in 'Content'. */
+    content: attr(data-dates);      /* Now what we're going to do with the before pseudo element here is to zero in and to target our 'DATA-DATES' attribute. we do that by using our 'content' property. */
+                                /* Now, you can only use content with the before or after pseudo elements. This sets the content that will appear either before or after the class in question. */
+                                /* VIP! We're going to set the content to use the attr() function, which is short for attribute.Then we're going to grab the data-dates attribute. */
+    position: absolute;             /* set the position to absolute so that we can give it a left position of 2.5em and a top position of 3em shown below.*/
+    left: 2.5em;                    /* explained above */
+    top: 3em;                       /* explained above */
+    display: block;                 /* We'll set the display to block. */
+    font-family: "Exo", sans-serif; /* We'll use our standard font family here for headings of Exo with san serif if Exo fails. */
+    font-weight: 500;               /* We're going to set the font-weight to 500, which is slightly bolder. But it's going to be pretty small. */
+    font-size: 0.8em;               /* We're going to set the font-size to 0.8em. */
+    padding: 0;                     /* We're also going to clear the padding because we don't want any padding around it, and we don't want any margins around it either, so we're going to clear those. */
+    margin: 0;                      /* Explained above */
+}
+
+                        /* Now that we've set our before pseudo element, which is going to contain our dates, we're going to use the AFTER pseudo element so theres a before and after element. */
+
+.timeline-item:after {              /*  */
+    width: 12px;                    /*  */
+    height: 12px;                   /*  */
+    display: block;                 /*  */
+    top: 2.4em;                     /*  */
+    position: absolute;             /*  */
+    left: -6px;                     /*  */
+    border-radius: 12px;            /*  */
+    content: '';                    /*  */
+    background: #fafafa;            /*  */
+}
 
 
 /*  */

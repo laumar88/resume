@@ -48,11 +48,11 @@
             </div>
         </div>      
     </header>
-        <section class="container-fluid">           <!-- Creating some personal details section for the 'cv' hire me bit The shape of that will be two columns, similar to the header.
+    <section class="container-fluid">           <!-- Creating some personal details section for the 'cv' hire me bit The shape of that will be two columns, similar to the header.
             On the left side, we'll have a column that's one-third the width of the entire row, which will contain Rosie's personal contact information.
             And on the right-hand side, taking up two-thirds, we'll have some expanded content explaining what Rosie's good at, why you should hire her, and so on. -->
         <div class="row">             <!-- add in 'row-table' to allow us to create a table structure so that our columns will remain the same height, 'row-table' removed becuase causes some issues with positioning, regardless of content. **$%$ Ref. in.Css to target the 'About me' section -->
-            <div class="col-md-4 bg-color-personal-info section-column">        <!-- This section down to **1** ref. below is all about adding our personal info items to the final third, which will be on the third left so it's the same dimensions as the profile photo above it, and it pushes out evenly. -->
+            <div class="col-md-4 bg-color-work-history section-column">        <!-- *%%£* ref. in css. in .css bg-color-work-history gives a purple background color -->
                         <!-- add a col-md-4 above our three reasons. doing this because, by default, elements are rendered in the order that they appear in HTML. So they either appear above, or they'll appear to the left and try and push any block level elements below that.
                         But we're using bootstrap to have our two columns side-by-side in the row. we do want our personal information to appear on the left, so that's why we're putting our col-md-4 above the three reasons. -->
                         <!-- I'm also supplying another class, bg-color-personal-info, which we'll set a nice grey background color. I'm also going to give section-column as a class there as well. -->
@@ -60,10 +60,26 @@
                         <!-- bg-color-personal-info in *111* ref. in .css Set the background color to light grey -->
                 <div class="row">                               <!--  -->
                     <div class="col-12">                        
-                        <h3 class="section-heading uppercase">  <!-- each column is going to have its own header. so we add a bootstrap row a column with the width of 12 which is the full width of the screen and use h3 for this header -->
+                        <h3 class="history-heading uppercase">  <!-- changed from section heading that we copied and pasted to history-heading and editted in .css *%*£* ref -->
                             Work History
                         </h3>
                     </div>
+                </div>
+                <div class="timeline-item" data-dates="02/1998 - 04/2004">    <!-- timeline-item targetted in *%£%* ref. css. inThis div is to add detail to our Resume, Work History. timeline-item is a custom attribute it is not a bootstrap default we've made it up to target the timeline/progress bars to make them look better. data-'prefix' is always used as it's very important when you're creating custom attributes to use the data-prefix. What comes afterwards can be whatever you like. It just makes your code easier to read for other developers and also differentiates your attribute from default built-in HTML5 attributes. -->  
+                        <h4>National College of Art and Design (NCAD)</h4>    <!-- So we're going to put a <h4> in here, and this is going to give our employer's name --> 
+                        <p>Sculptor in residence</p>                          <!-- provide a paragraph that tells us that Rosie was a sculptor in residence. -->
+                    </div>
+                    <div class="timeline-item" data-dates="04/2004 - 06/2008">
+                        <h4>Fisher and Diaz Funeral Directors</h4>
+                        <p>Junior Embalmer</p>
+                    </div>
+                    <div class="timeline-item" data-dates="06/2008 - 06/2011">
+                        <h4>Phantom Design Inc. Dublin</h4>
+                        <p>Junior Front End Developer</p>
+                    </div>
+                    <div class="timeline-item" data-dates="06/2011 - Present">
+                        <h4>Hooli Inc. Silicon Valley</h4>
+                        <p>Full Stack Web Developer</p>                
                 </div>
             </div>                                              <!-- This section down to **1** ref. above for the left third of the Personal Info section -->
             <div class="col-md-8 bg-color-three-reasons section-column">        <!-- 8/12 spaces for below *11** ref. from above left over 8/12 space. Inside our row, then, I'm going to create a column (because we have to have a column as a direct child of a row) of size 8, which is two-thirds the width of the screen. we set col-md-8 as we don't need to add any size classes for screen sizes smaller than medium because Bootstrap will automatically default to 12, our full width. We give a class called section-column, which will specify that this column is a table cell and also section-column specifies the use of a table cell, which will give us evenly sized columns in terms of height.
