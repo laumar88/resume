@@ -338,7 +338,7 @@ footer {
     margin: 0;                
 }
 
-.timeline-item:before {             /* This style lets us show the div we custom made (none Bootstrap default) so we can show the dates and times of our jobs in the Resume Work History by using the "BEFORE" pseudo element below in 'Content'. */
+.timeline-item:before {             /* This 'Pseudo' style lets us show the div we custom made (none Bootstrap default) so we can show the dates and times of our jobs in the Resume Work History by using the "BEFORE" pseudo element below in 'Content'. */
     content: attr(data-dates);      /* Now what we're going to do with the before pseudo element here is to zero in and to target our 'DATA-DATES' attribute. we do that by using our 'content' property. */
                                 /* Now, you can only use content with the before or after pseudo elements. This sets the content that will appear either before or after the class in question. */
                                 /* VIP! We're going to set the content to use the attr() function, which is short for attribute.Then we're going to grab the data-dates attribute. */
@@ -355,17 +355,25 @@ footer {
 
                         /* Now that we've set our before pseudo element, which is going to contain our dates, we're going to use the AFTER pseudo element so theres a before and after element. */
 
-.timeline-item:after {              /*  */
-    width: 12px;                    /*  */
-    height: 12px;                   /*  */
-    display: block;                 /*  */
-    top: 2.4em;                     /*  */
-    position: absolute;             /*  */
-    left: -6px;                     /*  */
-    border-radius: 12px;            /*  */
-    content: '';                    /*  */
-    background: #fafafa;            /*  */
+.timeline-item:after {              /* ALL This After 'Pseudo' adds a little round circle to our work history like a bullet point before each date shown */
+    width: 12px;                    /* set our width, first of all, to be 12px  */
+    height: 12px;                   /* and our height to be 12px because that gives us a square. */
+    display: block;                 /* Our display is going to be set to block once again. */
+    top: 2.4em;                     /* set the positioning at 2.4em. */
+    position: absolute;             /* position:absolute, of course, if we want to be doing this inside our relative parent <div>. */
+    left: -6px;                     /* And left to -6px, which is just going to drag it out to the left slightly and make it sit centrally on our timeline border. */
+    border-radius: 12px;            /* We'll set the border radius to 12px then. So there are a couple of ways that we can make things a circle. We can set the border radius to 50%, or we can set it to the height and the width of the square.*/
+    content: '';                    /* We're going to set the content to an empty string because we don't want anything else to appear in there. */
+    background: #fafafa;            /* The background color will be our off-white #fafafa to tie it in with everything else. */
 }
 
 
+.history-items {                    /* **$** ref. css This edits the whole of the Work history area the 4 eg jobs shes done encompassed into one area. */
+    margin-bottom: 30px;            /* give it a bottom margin of 30px, just so that it always pushes it out from any other info from the bottom of the end of the work history */
+}   
+    
+    
+    
+    
+    
 /*  */

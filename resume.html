@@ -65,21 +65,23 @@
                         </h3>
                     </div>
                 </div>
-                <div class="timeline-item" data-dates="02/1998 - 04/2004">    <!-- timeline-item targetted in *%£%* ref. css. inThis div is to add detail to our Resume, Work History. timeline-item is a custom attribute it is not a bootstrap default we've made it up to target the timeline/progress bars to make them look better. data-'prefix' is always used as it's very important when you're creating custom attributes to use the data-prefix. What comes afterwards can be whatever you like. It just makes your code easier to read for other developers and also differentiates your attribute from default built-in HTML5 attributes. -->  
+                <div class="history-items">         <!-- Put the work history / job timeline items into its own Div **$** ref. css -->
+                    <div class="timeline-item" data-dates="02/1998 - 04/2004">    <!-- timeline-item targetted in *%£%* ref. css. inThis div is to add detail to our Resume, Work History. timeline-item is a custom attribute it is not a bootstrap default we've made it up to target the timeline/progress bars to make them look better. data-'prefix' is always used as it's very important when you're creating custom attributes to use the data-prefix. What comes afterwards can be whatever you like. It just makes your code easier to read for other developers and also differentiates your attribute from default built-in HTML5 attributes. -->  
                         <h4>National College of Art and Design (NCAD)</h4>    <!-- So we're going to put a <h4> in here, and this is going to give our employer's name --> 
                         <p>Sculptor in residence</p>                          <!-- provide a paragraph that tells us that Rosie was a sculptor in residence. -->
                     </div>
-                    <div class="timeline-item" data-dates="04/2004 - 06/2008">
+                    <div class="timeline-item" data-dates="04/2004 - 06/2008">  <!-- Copy and pasted from above and editted details below -->
                         <h4>Fisher and Diaz Funeral Directors</h4>
                         <p>Junior Embalmer</p>
                     </div>
-                    <div class="timeline-item" data-dates="06/2008 - 06/2011">
+                    <div class="timeline-item" data-dates="06/2008 - 06/2011">  <!-- Each of these are different jobs done in the past -->
                         <h4>Phantom Design Inc. Dublin</h4>
                         <p>Junior Front End Developer</p>
                     </div>
-                    <div class="timeline-item" data-dates="06/2011 - Present">
+                    <div class="timeline-item" data-dates="06/2011 - Present">  <!-- another made up example of job done in the past -->
                         <h4>Hooli Inc. Silicon Valley</h4>
                         <p>Full Stack Web Developer</p>                
+                    </div>
                 </div>
             </div>                                              <!-- This section down to **1** ref. above for the left third of the Personal Info section -->
             <div class="col-md-8 bg-color-three-reasons section-column">        <!-- 8/12 spaces for below *11** ref. from above left over 8/12 space. Inside our row, then, I'm going to create a column (because we have to have a column as a direct child of a row) of size 8, which is two-thirds the width of the screen. we set col-md-8 as we don't need to add any size classes for screen sizes smaller than medium because Bootstrap will automatically default to 12, our full width. We give a class called section-column, which will specify that this column is a table cell and also section-column specifies the use of a table cell, which will give us evenly sized columns in terms of height.
